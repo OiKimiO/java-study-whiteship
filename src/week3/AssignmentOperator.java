@@ -6,16 +6,71 @@ public class AssignmentOperator {
     public static void main(String[] args) {
         // shallowCopy();
         // deepCopy();
+        // 대입연산자();
+    }
+
+    private static void 대입연산자() {
         int a = 1;
         System.out.printf("a = 1 ,결과값: %d \n",a);
-            a += 2;
+        a += 2;
         System.out.printf("a += 2 ,결과값: %d \n",a);
-            a -= 2;
+        a -= 2;
         System.out.printf("a -= 2 ,결과값: %d \n",a);
-            a *= 3;
+        a *= 3;
         System.out.printf("a *= 3 ,결과값: %d \n",a);
-            a /= 3;
+        a /= 3;
         System.out.printf("a /= 3 ,결과값: %d \n",a);
+        a *= 3;
+        a %= 3;
+        System.out.println("a %= 3 ,결과값: " + a);
+        a += 3;
+        a &= 5;
+        /* 3: 011, 5: 101
+         *   011
+         * & 101
+         *   001
+        * */
+        System.out.println(a);
+        a = 3;
+        a |= 5;
+        /* 3: 011, 5: 101
+         *   011
+         * | 101
+         *   111
+         * */
+        System.out.printf("a |= 3 ,결과값: %d \n", a);
+        a ^= 3;
+        /* 7: 111, 3: 011
+         *     111
+         * XOR 011
+         *     100
+         */
+        System.out.printf("a ^= 3 ,결과값: %d \n", a);
+        a <<= 3;
+        /* a = 4
+         * a = 100
+         * <<= 3번: 100000
+         * */
+        System.out.printf("a <<= 3 ,결과값: %d \n", a);
+        /* a = 32
+         * a = 100000
+         * >>= 3번: 100
+         * */
+        a >>= 3;
+        System.out.printf("a <<= 3 ,결과값: %d \n", a);
+        /* a = 4
+         * a = 100
+         * a >>>= 3
+         * a = 100000
+         * */
+        a = -32;
+        a >>>= 3;
+        /* a = -32
+         * a = 11111111 11111111 11111111 00100000
+         * a = 00011111 11111111 11111111 11100100
+         * a = 536,870,908
+         * */
+        System.out.printf("a >>>= 3 ,결과값: %d \n", a);
     }
 
     private static void deepCopy() {
