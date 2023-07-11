@@ -21,6 +21,12 @@ public class DirectionOperator {
     }
 
     private static IntBinaryOperator 람다표현식() {
-        return (x,y) -> x < y ? x : y;
+        return (int x,int y) -> x < y ? x : y;
     }
+
+    private static IntBinaryOperator 람다표현식_타입추론가능() {
+        return (x, y) -> x < y ? x : y;
+    }
+
+
 }
