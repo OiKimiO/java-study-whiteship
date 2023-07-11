@@ -15,6 +15,7 @@ public class DirectionOperator {
         람다표현식_매개변수하나_테스트();
         람다표현식_중괄호_없음_테스트();
         람다표현식_return은_중괄호_필수_테스트();
+        람다표현식_return문_대체_테스트();
     }
 
     private static Object 익명클래스() {
@@ -88,4 +89,19 @@ public class DirectionOperator {
            return (x) -> return x * x;
        }
     */
+
+    private static void 람다표현식_return문_대체_테스트() {
+        Function<Integer, Integer> 람다_return문 = 람다표현식_return문();
+        System.out.println(람다_return문.apply(3));
+        Function<Integer, Integer> 람다_return_대신_표현문 = 람다표현식_return문();
+        System.out.println(람다_return_대신_표현문.apply(3));
+    }
+
+    private static Function<Integer, Integer> 람다표현식_return문(){
+        return (x) ->  {return x * x; };
+    }
+
+    private static Function<Integer, Integer> 람다표현식_return문_대신_표현식(){
+        return (x) ->  x * x;
+    }
 }
