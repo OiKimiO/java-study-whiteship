@@ -3,6 +3,7 @@ package week3;
 public class SwitchOperator {
     public static void main(String[] args) {
         java12이전_Switch();
+        java12_Switch();
     }
 
     private static void java12이전_Switch() {
@@ -37,4 +38,16 @@ public class SwitchOperator {
 
         return temp;
     }
+
+    private static void java12_Switch(){
+        System.out.println(java12_람다리턴("파란색"));
+    }
+
+    private static int java12_람다리턴(String 요청값) {
+        return switch(요청값){
+            case "파란색" -> 1;
+            default -> 2;
+        };
+    }
+
 }
