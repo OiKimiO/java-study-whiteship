@@ -4,6 +4,7 @@ public class SwitchOperator {
     public static void main(String[] args) {
         java12이전_Switch();
         java12_Switch();
+        java13_Switch();
     }
 
     private static void java12이전_Switch() {
@@ -46,6 +47,20 @@ public class SwitchOperator {
     private static int java12_람다리턴(String 요청값) {
         return switch(요청값){
             case "파란색" -> 1;
+            default -> 2;
+        };
+    }
+
+    private static void java13_Switch(){
+        System.out.println(java13_람다리턴_중괄호_리턴("파란색"));
+    }
+
+    private static int java13_람다리턴_중괄호_리턴(String 요청값){
+        return switch(요청값){
+            case "파란색" -> {
+                int aa = 123;
+                yield aa + 1; // java13 기능
+            }
             default -> 2;
         };
     }
