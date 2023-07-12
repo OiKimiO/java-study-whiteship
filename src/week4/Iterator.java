@@ -6,7 +6,8 @@ public class Iterator {
     public static void main(String[] args) {
         // while문();
         // doWhile문();
-        for문();
+        // for문();
+        EnhancedFor문();
     }
 
     private static void while문() {
@@ -36,6 +37,13 @@ public class Iterator {
         int[] arr = new int[]{1,2};
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
+        }
+    }
+
+    private static void EnhancedFor문() {
+        int[] arr = new int[]{1,2};
+        for (int number : arr) {
+            System.out.println(number);
         }
     }
 }
