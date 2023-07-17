@@ -1,4 +1,4 @@
-package com.java.study.week4;
+package com.java.study.week4.linkedList;
 
 public class SinglyLinkedList {
 
