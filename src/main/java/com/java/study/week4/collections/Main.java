@@ -2,7 +2,8 @@ package com.java.study.week4.collections;
 
 public class Main {
     public static void main(String[] args) {
-        linkedListTest();
+        // linkedListTest();
+        arrayStack();
     }
 
     private static void linkedListTest() {
@@ -28,4 +29,15 @@ public class Main {
         }
     }
 
+    private static void arrayStack() {
+        ArrayStack stacked = new ArrayStack();
+        stacked.push(1);
+        stacked.push(2);
+        stacked.push(3);
+
+        System.out.println(stacked.pop());
+        System.out.println(stacked.pop());
+        stacked.push(4);
+        System.out.println(stacked.pop());
+    }
 }
