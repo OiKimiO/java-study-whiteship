@@ -3,7 +3,8 @@ package com.java.study.week4.collections;
 public class Main {
     public static void main(String[] args) {
         // linkedListTest();
-        arrayStack();
+        // arrayStack();
+        linkedListStack();
     }
 
     private static void linkedListTest() {
@@ -39,5 +40,16 @@ public class Main {
         System.out.println(stacked.pop());
         stacked.push(4);
         System.out.println(stacked.pop());
+    }
+
+    private static void linkedListStack() {
+        ListNodeStack stack = new ListNodeStack();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        stack.push(4);
+        System.out.println(stack.pop());
     }
 }
