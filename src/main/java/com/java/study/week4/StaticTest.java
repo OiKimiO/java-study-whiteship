@@ -54,7 +54,7 @@ class outerClass{
     }
 
     public void setData(int data){
-        Integer integer = new Integer(1);
+        // Integer integer = new Integer(1);
         this.data = data;
     }
 
