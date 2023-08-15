@@ -33,4 +33,14 @@ public class ExtendTest {
         posts.forEach(p -> sns.forEach(s -> p.postOn(s)));
     }
 
+    @Test
+    void 인터페이스테스트(){
+        // 다형성 예제
+        MyInterface add = new CalA();
+        MyInterface multiply = new CalB();
+        int calVal = 20;
+
+        System.out.println(add.calculate(calVal));
+        System.out.println(multiply.calculate(calVal));
+    }
 }
