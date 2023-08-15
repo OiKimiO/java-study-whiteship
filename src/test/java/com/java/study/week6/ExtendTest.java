@@ -9,4 +9,10 @@ public class ExtendTest {
         Child child = new Child();
         child.childMethod();
     }
+
+    @Test
+    void 오버라이딩_테스트(){
+        B b = new B();
+        b.print(); // 재정의한 B값을 출력
+    }
 }
