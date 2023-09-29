@@ -2,16 +2,15 @@ package com.java.study.week10;
 
 public class CommonCalculate {
     private int amount;
-
-    public CommonCalculate() {
-
+    public CommonCalculate(){
+        amount= 0;
     }
 
-    public void plus(int value){
+    public synchronized void plus(int value){
         amount += value;
     }
 
-    public void minus(int value){
+    public synchronized void minus(int value){
         amount -= value;
     }
 
