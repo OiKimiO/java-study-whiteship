@@ -2,10 +2,8 @@ package com.java.study.week11;
 
 public class CompareData {
     public static void main(String[] args) {
-        /*if( Company.APPLE == Fruit.APPLE){
-            System.out.println("논리적으로 맞으면 안됨");
-        }else{
-            System.out.println("정답");
-        }*/ // 컴파일 에러 발생
+        Fruit apple = Fruit.APPLE;
+        // Fruit grape = new Fruit();
+        // 에러 발생, 열거형 생성자의 접근제어자는 항상 private임
     }
 }

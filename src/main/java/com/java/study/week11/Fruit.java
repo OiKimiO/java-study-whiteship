@@ -1,13 +1,8 @@
 package com.java.study.week11;
 
-public class Fruit {
-    public static final Fruit APPLE = new Fruit("APPLE");
-    public static final Fruit PEACH = new Fruit("PEACH");
-    public static final Fruit BANANA = new Fruit("BANANA");
-
-    private String name;
-
-    private Fruit(String name) {
-        this.name = name;
+public enum Fruit {
+    APPLE, PEACH, BANANA;
+    Fruit() {
+        System.out.println("생성자 호출 " + this.name());
     }
 }
