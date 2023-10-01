@@ -1,9 +1,10 @@
 package com.java.study.week12;
 
-@AnnotationInterface2
-public class Korea implements Great{
+
+public class Gyeonggi extends Korea{
+
     @Override
     public String country() {
-        return "한국";
+        return super.country();
     }
 }
